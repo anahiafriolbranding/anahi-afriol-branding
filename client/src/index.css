@@ -46,9 +46,9 @@
   --color-orange: oklch(0.72 0.15 55);
   --color-orange-light: oklch(0.80 0.12 55);
   --color-orange-dark: oklch(0.62 0.16 55);
-  --color-warm-gray: oklch(0.55 0.02 65);
-  --color-warm-gray-light: oklch(0.70 0.02 65);
-  --color-warm-gray-dark: oklch(0.40 0.02 65);
+  --color-warm-gray: oklch(0.50 0.01 260);
+  --color-warm-gray-light: oklch(0.68 0.01 260);
+  --color-warm-gray-dark: oklch(0.22 0.01 260);
   --color-warm-bg: oklch(0.985 0.002 80);
 }
 
