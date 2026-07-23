@@ -1,8 +1,9 @@
 import { MessageSquare, Palette, Building2 } from "lucide-react";
 
 /*
- * Services Section - Minimalista, cálido
- * Fondo claro con acentos naranja
+ * Services Section - Jerarquía semántica corregida
+ * h2: título de sección
+ * h3: cada tarjeta de servicio
  */
 
 const services = [
@@ -82,9 +83,9 @@ export default function ServicesSection() {
         <div className="mt-20 bg-warm-gray-dark rounded-2xl p-8 sm:p-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-orange/10 rounded-full blur-3xl" />
           <div className="relative z-10">
-            <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold text-white mb-2">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold text-white mb-2">
               Mi método de trabajo
-            </h3>
+            </h2>
             <p className="text-white/60 mb-10 text-lg">
               Un proceso probado en más de 50 marcas
             </p>

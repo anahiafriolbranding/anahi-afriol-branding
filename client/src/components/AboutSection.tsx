@@ -1,8 +1,8 @@
 import { Award, BookOpen, Users } from "lucide-react";
 
 /*
- * About Section - Minimalista, cálido
- * Colores naranja y warm-gray
+ * About Section - Jerarquía semántica correcta
+ * h2 para título de sección
  */
 
 export default function AboutSection() {
@@ -15,10 +15,12 @@ export default function AboutSection() {
             <div className="relative">
               <div className="absolute -inset-4 bg-orange/5 rounded-2xl blur-xl" />
               <img
-                src="/manus-storage/hero-strategy-meeting_beee53f5.png"
-                alt="Anahí Afriol presentando estrategia de branding para Pymes - especialista en desarrollo de marcas"
+                src="/manus-storage/anahi-retrato_20b7b201.jpg"
+                alt="Anahí Afriol, consultora de branding y comunicación para pymes"
                 className="relative rounded-2xl shadow-lg w-full object-cover"
                 loading="lazy"
+                width="701"
+                height="907"
               />
               {/* Floating credential card */}
               <div className="absolute -bottom-6 -right-4 sm:right-4 bg-white rounded-xl shadow-lg p-4 border border-border">
