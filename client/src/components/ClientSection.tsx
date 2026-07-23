@@ -1,10 +1,8 @@
 import { Building, Briefcase, Rocket } from "lucide-react";
 
 /*
- * Client Ideal Section - Zona caliente #3
- * SEO: H2 con segmentos de cliente ideal
- * Layout: 3 cards identificando los 3 perfiles de cliente
- * Copy: Más directo, diagnóstico, con lenguaje de estratega
+ * Client Ideal Section - Minimalista, cálido
+ * Fondo warm-gray-dark para contraste
  */
 
 const clients = [
@@ -13,14 +11,14 @@ const clients = [
     title: "Pymes en crecimiento",
     description: "Tu negocio funciona bien, pero los clientes que llegan no perciben su verdadero valor. Competís por precio cuando deberías ser elegido por lo que valés.",
     signal: "Tu marca no convence al primer vistazo",
-    color: "text-coral",
+    color: "text-orange",
   },
   {
     icon: Briefcase,
     title: "Profesionales independientes",
     description: "Consultores, arquitectos, médicos y especialistas que necesitan una marca personal sólida que los diferencie y les permita cobrar por su expertise real.",
     signal: "Necesitás que tu marca hable antes que vos",
-    color: "text-coral-light",
+    color: "text-orange-light",
   },
   {
     icon: Rocket,
@@ -33,17 +31,17 @@ const clients = [
 
 export default function ClientSection() {
   return (
-    <section id="cliente-ideal" className="py-24 bg-petrol text-white relative overflow-hidden" aria-label="Para quién trabaja Anahí Afriol">
+    <section id="cliente-ideal" className="py-24 bg-warm-gray-dark text-white relative overflow-hidden" aria-label="Para quién trabaja Anahí Afriol">
       {/* Background accents */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-coral/3 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-coral/3 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange/3 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-orange/3 rounded-full blur-3xl" />
 
       <div className="container relative z-10">
-        {/* Header - more editorial */}
+        {/* Header */}
         <div className="max-w-4xl mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-end">
             <div>
-              <span className="text-coral font-semibold text-sm uppercase tracking-wider mb-3 block">
+              <span className="text-orange font-semibold text-sm uppercase tracking-wider mb-3 block">
                 Para quién trabajo
               </span>
               <h2 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl font-bold leading-tight">
@@ -56,19 +54,19 @@ export default function ClientSection() {
           </div>
         </div>
 
-        {/* Client cards - asymmetric layout */}
+        {/* Client cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {clients.map((client, i) => (
             <div
               key={client.title}
               className={`relative rounded-xl p-8 transition-all duration-300 group ${
                 i === 1
-                  ? "bg-coral/15 border border-coral/25 md:translate-y-4"
+                  ? "bg-orange/15 border border-orange/25 md:translate-y-4"
                   : "bg-white/5 border border-white/10 hover:bg-white/8"
               }`}
             >
               <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-6 ${
-                i === 1 ? "bg-coral/25" : "bg-white/10"
+                i === 1 ? "bg-orange/25" : "bg-white/10"
               }`}>
                 <client.icon className={`w-6 h-6 ${client.color}`} />
               </div>
@@ -79,9 +77,9 @@ export default function ClientSection() {
                 {client.description}
               </p>
               <div className={`flex items-center gap-2 text-sm font-medium ${
-                i === 1 ? "text-coral-light" : "text-white/50"
+                i === 1 ? "text-orange-light" : "text-white/50"
               }`}>
-                <span className={`w-1.5 h-1.5 rounded-full ${i === 1 ? "bg-coral" : "bg-white/40"}`} />
+                <span className={`w-1.5 h-1.5 rounded-full ${i === 1 ? "bg-orange" : "bg-white/40"}`} />
                 {client.signal}
               </div>
             </div>
@@ -97,7 +95,7 @@ export default function ClientSection() {
             href="https://wa.link/eesy3f"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-coral text-white px-8 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-coral-light hover:scale-[1.02] active:scale-[0.97] shadow-lg shadow-coral/25"
+            className="inline-flex items-center gap-2 bg-orange text-white px-8 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-orange-dark hover:scale-[1.02] active:scale-[0.97] shadow-lg shadow-orange/25"
           >
             Escribime y detectamos qué le falta a tu marca
           </a>

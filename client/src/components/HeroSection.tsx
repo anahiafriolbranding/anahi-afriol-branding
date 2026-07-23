@@ -1,65 +1,62 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 /*
- * Hero Section - Zona caliente #1 (principal)
- * Copy SEO: H1 con keyword principal + propuesta de valor clara
- * Layout asimétrico editorial: texto dominante izquierda / imagen derecha con card flotante
- * Estilo: Warm Minimal con fondo petrol oscuro + coral accent
- * Tipografía: Más audaz, más contrastada, voz de estratega
+ * Hero Section - Minimalista, cálido, profesional
+ * Fondo claro con acentos naranja
+ * Logo y paleta alineados al branding oficial
  */
 
 export default function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "linear-gradient(135deg, oklch(0.20 0.07 240) 0%, oklch(0.16 0.08 250) 40%, oklch(0.22 0.06 240) 100%)" }}
+      className="relative min-h-screen flex items-center overflow-hidden bg-background"
       aria-label="Introducción al servicio de branding para Pymes"
     >
-      {/* Subtle grid pattern overlay */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)", backgroundSize: "60px 60px" }} />
+      {/* Subtle warm gradient accent */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-orange/5 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-warm-gray/5 to-transparent" />
 
-      {/* Accent orbs */}
-      <div className="absolute top-20 right-10 w-80 h-80 bg-coral/8 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-[500px] h-[500px] bg-coral/3 rounded-full blur-3xl" />
+      {/* Decorative circles */}
+      <div className="absolute top-32 right-20 w-64 h-64 bg-orange/3 rounded-full blur-3xl" />
 
-      <div className="container relative z-10 pt-28 pb-24">
+      <div className="container relative z-10 pt-28 pb-20">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           {/* Left: Editorial Copy */}
           <div className="lg:col-span-7 space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2.5 bg-white/8 backdrop-blur-sm border border-white/15 rounded-full px-5 py-2.5">
-              <span className="w-2.5 h-2.5 bg-coral rounded-full animate-pulse" />
-              <span className="text-sm text-white/80 font-medium">Especialista en Branding para Pymes · 20+ años</span>
+            <div className="inline-flex items-center gap-2.5 bg-orange/10 border border-orange/20 rounded-full px-5 py-2.5">
+              <span className="w-2.5 h-2.5 bg-orange rounded-full animate-pulse" />
+              <span className="text-sm text-warm-gray-dark font-medium">Especialista en Branding para Pymes · 20+ años</span>
             </div>
 
-            {/* H1 - Keyword principal SEO + voz estratégica */}
-            <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold text-white leading-[1.08] tracking-tight">
+            {/* H1 - Keyword principal SEO */}
+            <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold text-warm-gray-dark leading-[1.08] tracking-tight">
               Tu marca te quedó{" "}
               <span className="relative inline-block">
-                <span className="text-coral">chica</span>
+                <span className="text-orange">chica</span>
                 <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" preserveAspectRatio="none">
-                  <path d="M0 7 Q50 0 100 5 Q150 8 200 2" fill="none" stroke="#D95040" strokeWidth="2.5" strokeLinecap="round" />
+                  <path d="M0 7 Q50 0 100 5 Q150 8 200 2" fill="none" stroke="#EF7B48" strokeWidth="2.5" strokeLinecap="round" />
                 </svg>
               </span>
               .
               <br className="hidden sm:block" />
-              <span className="text-white/90">Hagámosla </span>
-              <span className="text-coral-light">crecer</span>.
+              <span className="text-warm-gray">Hagámosla </span>
+              <span className="text-orange">crecer</span>.
             </h1>
 
-            {/* Subheadline - más directa y estratégica */}
-            <p className="text-lg sm:text-xl text-white/70 max-w-xl leading-relaxed">
-              <strong className="text-white font-semibold">Branding verbal, visual y espacial</strong> para Pymes, profesionales y emprendedores que necesitan una marca que comunique su verdadero valor y los elijan por lo que valen — no por lo que cobran.
+            {/* Subheadline */}
+            <p className="text-lg sm:text-xl text-warm-gray leading-relaxed max-w-xl">
+              <strong className="text-warm-gray-dark font-semibold">Branding verbal, visual y espacial</strong> para Pymes, profesionales y emprendedores que necesitan una marca que comunique su verdadero valor y los elijan por lo que valen — no por lo que cobran.
             </p>
 
-            {/* CTAs - Zona caliente principal */}
+            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
                 href="https://wa.link/eesy3f"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-coral text-white px-8 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-coral-light hover:scale-[1.02] active:scale-[0.97] shadow-xl shadow-coral/30"
+                className="inline-flex items-center justify-center gap-3 bg-orange text-white px-8 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-orange-dark hover:scale-[1.02] active:scale-[0.97] shadow-lg shadow-orange/25"
               >
                 <MessageCircle className="w-5 h-5" />
                 Agenda tu consulta gratuita
@@ -67,21 +64,21 @@ export default function HeroSection() {
               </a>
               <a
                 href="#servicios"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/25 text-white px-8 py-4 rounded-lg font-semibold text-base transition-all duration-200 hover:bg-white/8 hover:border-white/40"
+                className="inline-flex items-center justify-center gap-2 border-2 border-warm-gray/30 text-warm-gray-dark px-8 py-4 rounded-lg font-semibold text-base transition-all duration-200 hover:bg-warm-gray/5 hover:border-warm-gray/50"
               >
                 Cómo trabajo
               </a>
             </div>
 
-            {/* Social proof mini */}
-            <div className="flex items-center gap-6 pt-6 border-t border-white/10">
+            {/* Social proof */}
+            <div className="flex items-center gap-6 pt-6 border-t border-border">
               <div className="flex -space-x-2.5">
-                <div className="w-10 h-10 rounded-full bg-coral/40 border-2 border-petrol flex items-center justify-center text-white text-[10px] font-bold font-[family-name:var(--font-display)]">50+</div>
-                <div className="w-10 h-10 rounded-full bg-coral/25 border-2 border-petrol flex items-center justify-center text-white text-xs font-bold">P</div>
-                <div className="w-10 h-10 rounded-full bg-coral/15 border-2 border-petrol flex items-center justify-center text-white text-xs font-bold">M</div>
+                <div className="w-10 h-10 rounded-full bg-orange/20 border-2 border-white flex items-center justify-center text-orange text-[10px] font-bold font-[family-name:var(--font-display)]">50+</div>
+                <div className="w-10 h-10 rounded-full bg-warm-gray/20 border-2 border-white flex items-center justify-center text-warm-gray text-xs font-bold">P</div>
+                <div className="w-10 h-10 rounded-full bg-orange/10 border-2 border-white flex items-center justify-center text-orange text-xs font-bold">M</div>
               </div>
-              <p className="text-white/50 text-sm leading-snug">
-                <strong className="text-white/80">+50 marcas transformadas</strong><br />
+              <p className="text-warm-gray text-sm leading-snug">
+                <strong className="text-warm-gray-dark">+50 marcas transformadas</strong><br />
                 para pymes argentinas
               </p>
             </div>
@@ -90,49 +87,31 @@ export default function HeroSection() {
           {/* Right: Image with floating elements */}
           <div className="lg:col-span-5 hidden lg:block">
             <div className="relative">
-              {/* Glow behind image */}
-              <div className="absolute -inset-6 bg-coral/10 rounded-3xl blur-2xl" />
-
-              {/* Main image */}
+              <div className="absolute -inset-6 bg-orange/5 rounded-3xl blur-2xl" />
               <img
                 src="/manus-storage/hero-branding-office_47214cff.png"
                 alt="Espacio corporativo con branding aplicado - ejemplo de branding espacial para eventos, oficinas y locales"
-                className="relative rounded-2xl shadow-2xl w-full object-cover"
+                className="relative rounded-2xl shadow-lg w-full object-cover"
                 loading="eager"
               />
-
-              {/* Floating card - branding spatial */}
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-xl p-5 max-w-[220px] border border-border/50">
+              {/* Floating card */}
+              <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-lg p-5 max-w-[220px] border border-border">
                 <div className="flex items-center gap-2 mb-2.5">
-                  <div className="w-3 h-3 bg-coral rounded-full" />
-                  <span className="text-xs font-bold text-petrol font-[family-name:var(--font-display)]">Branding Espacial</span>
+                  <div className="w-3 h-3 bg-orange rounded-full" />
+                  <span className="text-xs font-bold text-warm-gray-dark font-[family-name:var(--font-display)]">Branding Espacial</span>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">
+                <p className="text-xs text-warm-gray leading-relaxed">
                   Puestos de venta, oficinas y eventos que comunican tu marca
                 </p>
-                <div className="mt-3 flex gap-1.5">
-                  <span className="w-4 h-4 rounded bg-coral" />
-                  <span className="w-4 h-4 rounded bg-petrol" />
-                  <span className="w-4 h-4 rounded bg-petrol-light" />
-                  <span className="w-4 h-4 rounded bg-muted" />
-                </div>
               </div>
-
-              {/* Floating badge top-right */}
-              <div className="absolute -top-4 -right-4 bg-petrol text-white rounded-lg px-4 py-3 shadow-xl">
-                <div className="text-xs text-white/60 mb-0.5">Servicios</div>
+              {/* Floating badge */}
+              <div className="absolute -top-4 -right-4 bg-orange text-white rounded-lg px-4 py-3 shadow-lg">
+                <div className="text-xs text-white/80 mb-0.5">Servicios</div>
                 <div className="font-bold text-sm font-[family-name:var(--font-display)]">Verbal · Visual · Espacial</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Bottom wave divider */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path d="M0 40L48 35.3C96 30.7 192 21.3 288 25.3C384 29.3 480 46.7 576 52.3C672 58 768 52 864 43.3C960 34.7 1056 23.3 1152 25.3C1248 27.3 1344 42.7 1392 50.3L1440 58V100H1392C1344 100 1248 100 1152 100C1056 100 960 100 864 100C768 100 672 100 576 100C480 100 384 100 288 100C192 100 96 100 48 100H0V40Z" fill="oklch(0.99 0.002 80)"/>
-        </svg>
       </div>
     </section>
   );
