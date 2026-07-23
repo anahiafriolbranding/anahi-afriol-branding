@@ -81,9 +81,14 @@ export default function PortfolioSection() {
         <div className="mb-8 rounded-2xl overflow-hidden border border-warm-gray/20 group">
           <div className="relative bg-gradient-to-br from-warm-gray-dark to-warm-gray p-10 sm:p-14 flex flex-col sm:flex-row items-start sm:items-center gap-8">
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center border border-white/20">
-                <span className="text-4xl font-bold text-white font-[family-name:var(--font-display)]">S</span>
-              </div>
+              <img
+                src="/manus-storage/secupro-logo_8fbdabe5.png"
+                alt="Logo SECUPRO Seguridad Tecnológica - Rebranding completo"
+                className="w-28 h-28 object-contain bg-white rounded-xl p-2 shadow-md"
+                loading="lazy"
+                width="112"
+                height="112"
+              />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
