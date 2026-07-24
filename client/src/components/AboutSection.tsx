@@ -31,6 +31,7 @@ export default function AboutSection() {
                   <div>
                     <div className="text-xs text-warm-gray">Formación</div>
                     <div className="text-sm font-semibold text-warm-gray-dark">Diseñadora UBA</div>
+                    <div className="text-sm font-semibold text-warm-gray-dark">Especialista en Gestión UBA</div>
                   </div>
                 </div>
               </div>
