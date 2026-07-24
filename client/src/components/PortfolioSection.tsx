@@ -37,6 +37,7 @@ const projects = [
     type: "Papelería + Packaging + Espacio",
     color: "from-orange to-orange-dark",
     letter: "A",
+    logo: "/manus-storage/logo-aviguri_14cabd37.jpg",
     link: "https://www.behance.net/gallery/183706611/AVIGURI-Rebranding-Papeleria-Packaging-Arquigrafia",
   },
   {
