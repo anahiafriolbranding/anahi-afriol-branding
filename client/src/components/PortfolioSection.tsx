@@ -22,11 +22,12 @@ const projects = [
     link: "https://www.behance.net/gallery/185364447/GRUPO-CTS-Rebranding-papeleria-grafica-vehicular",
   },
   {
-    name: "Easy House",
-    category: "Rebranding + Identidad Visual",
+    name: "Easy House Construcción",
+    category: "Rebranding + Identidad Visual + Redes",
     type: "Marca + Redes Sociales",
     color: "from-warm-gray-dark to-warm-gray",
     letter: "E",
+    link: "https://www.behance.net/gallery/185666503/EASY-HOUSE-CONSTRUCCION-Rebranding-Id-Visual-Redes",
   },
   {
     name: "Aviguri",
