@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
 
 /*
  * Header - Logo oficial + paleta naranja/gris
@@ -60,13 +60,13 @@ export default function Header() {
           ))}
           {/* CTA Header - Zona caliente */}
           <a
-            href="https://calendly.com/anahiafriolbrandingpymes/30min"
+            href="https://wa.link/eesy3f"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-orange text-white px-5 py-2.5 rounded-md font-semibold text-sm transition-all duration-200 hover:bg-orange-dark hover:scale-[1.02] active:scale-[0.97] shadow-md hover:shadow-lg"
           >
-            <Phone className="w-4 h-4" />
-            Agendá tu consulta
+            <MessageCircle className="w-4 h-4" />
+            Escribime
           </a>
         </div>
 
@@ -100,13 +100,13 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="https://calendly.com/anahiafriolbrandingpymes/30min"
+              href="https://wa.link/eesy3f"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-orange text-white px-5 py-3 rounded-md font-semibold text-base mt-2"
             >
-              <Phone className="w-4 h-4" />
-              Agendá tu consulta
+              <MessageCircle className="w-4 h-4" />
+              Escribime
             </a>
           </div>
         </div>
