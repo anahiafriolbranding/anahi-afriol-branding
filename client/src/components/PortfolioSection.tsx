@@ -15,7 +15,7 @@ const projects = [
   },
   {
     name: "Grupo CTS",
-    category: "Rebranding, Arquitectura de Marca, Papelería, Gráfica Vehicular",
+    category: "Rebranding + Arquitectura de Marca + Papelería + Gráfica Vehicular",
     type: "Identidad completa",
     color: "from-orange to-orange-dark",
     letter: "C",
