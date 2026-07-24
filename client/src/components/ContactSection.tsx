@@ -36,7 +36,7 @@ export default function ContactSection() {
               WhatsApp
             </a>
             <a
-              href="mailto:contacto@anahiafriol.com"
+              href="mailto:anahiafriol@gmail.com"
               className="flex items-center justify-center gap-3 bg-white/10 border border-white/20 text-white px-6 py-4 rounded-lg font-semibold text-base transition-all duration-200 hover:bg-white/15 hover:scale-[1.02] active:scale-[0.97]"
             >
               <Mail className="w-5 h-5" />
