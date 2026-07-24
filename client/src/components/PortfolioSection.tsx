@@ -28,6 +28,7 @@ const projects = [
     type: "Marca + Redes Sociales",
     color: "from-warm-gray-dark to-warm-gray",
     letter: "E",
+    logo: "/manus-storage/logo-easy-house_d87bcda1.jpg",
     link: "https://www.behance.net/gallery/185666503/EASY-HOUSE-CONSTRUCCION-Rebranding-Id-Visual-Redes",
   },
   {
