@@ -18,10 +18,10 @@ const testimonials = [
     link: "https://www.grupocts.com.ar/",
   },
   {
-    text: "Andrea hizo un trabajo excelente en nuestro proyecto. Demostró un profundo conocimiento del idioma y realizó correcciones claras y bien pensadas que hicieron que todo sonara preciso y natural.",
-    author: "Head of Technology",
-    role: "Clarity",
-    link: "https://www.claritybhs.com",
+    text: "Conocí a Anahí fuera del ámbito laboral, así que cuando decidí independizarme en Inglaterra y crear mi propia marca, ya sabía quién era como persona. Aun así, cuando la contacté para pedirle ayuda profesional, superó todas mis expectativas.\n\nA pesar de la distancia, le conté lo que quería lograr y me presentó varias opciones que me ayudaron a ver con mucha más claridad lo que realmente estaba buscando. Fue evidente desde el principio que había entendido no solo lo que yo decía, sino lo que yo aspiraba a construir. Eso no es algo que se consigue fácil.\n\nEl resultado fue un manual de marca completo con todas las indicaciones para aplicar mi identidad de forma coherente, templates listos para usar en redes sociales y mis logos en distintas escalas y versiones según el fondo — todo pensado para que yo pudiera aplicarlo sola sin perder consistencia. Hoy, siete años después, mi marca sigue siendo sólida, mi negocio ha recibido reconocimientos a lo largo del camino y estoy convencida de que contar con una identidad visual clara y profesional fue clave para ganarme la confianza de mis clientes desde el principio.\n\nSi estás pensando en invertir en tu marca, hacelo con alguien que te escuche de verdad. Yo tuve esa suerte.",
+    author: "Andrea Sacchi",
+    role: "Language Services",
+    link: "https://www.behance.net/gallery/181565837/ANDREA-SACCHI-LANGUAGE-SERVICES-Marca-Personal",
   },
 ];
 
