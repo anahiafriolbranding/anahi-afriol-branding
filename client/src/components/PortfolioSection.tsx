@@ -31,10 +31,11 @@ const projects = [
   },
   {
     name: "Aviguri",
-    category: "Branding completo + Arquigrafía",
+    category: "Rebranding + Arquigrafía (diseño de local) + Packaging",
     type: "Papelería + Packaging + Espacio",
     color: "from-orange to-orange-dark",
     letter: "A",
+    link: "https://www.behance.net/gallery/183706611/AVIGURI-Rebranding-Papeleria-Packaging-Arquigrafia",
   },
   {
     name: "Coteflan",
