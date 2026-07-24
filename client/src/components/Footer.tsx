@@ -65,9 +65,9 @@ export default function Footer() {
               <div>
                 <p className="text-warm-gray text-xs uppercase tracking-wider mb-1">Diseño de espacios</p>
                 <a href="https://semasespaciosdemarca.my.canva.site/" target="_blank" rel="noopener noreferrer" className="text-warm-gray-dark text-sm font-medium hover:text-orange transition-colors">
-                  SE+ Espacios de Marca →
+                  SE+, Diseño de Espacios de Marca →
                 </a>
-                <p className="text-warm-gray text-xs mt-1">Anahí + Yanina Afriol</p>
+                <p className="text-warm-gray text-xs mt-1">Identidad + Arquitectura</p>
               </div>
               <div>
                 <p className="text-warm-gray text-xs uppercase tracking-wider mb-1">Branding bilingüe</p>
