@@ -19,6 +19,7 @@ const projects = [
     type: "Identidad completa",
     color: "from-orange to-orange-dark",
     letter: "C",
+    logo: "/manus-storage/logo-grupo-cts_7cdd941c.png",
     link: "https://www.behance.net/gallery/185364447/GRUPO-CTS-Rebranding-papeleria-grafica-vehicular",
   },
   {
@@ -122,9 +123,13 @@ export default function PortfolioSection() {
               className="group/card relative rounded-xl overflow-hidden border border-border bg-card hover:border-orange/30 transition-all duration-300 hover:shadow-md"
             >
               <div className={`h-24 bg-gradient-to-br ${project.color} flex items-center justify-center relative`}>
-                <span className="text-3xl font-bold text-white/90 font-[family-name:var(--font-display)] opacity-80 group-hover/card:opacity-100 transition-opacity">
-                  {project.letter}
-                </span>
+                {project.logo ? (
+                  <img src={project.logo} alt={`Logo de ${project.name}`} className="h-16 w-auto object-contain" />
+                ) : (
+                  <span className="text-3xl font-bold text-white/90 font-[family-name:var(--font-display)] opacity-80 group-hover/card:opacity-100 transition-opacity">
+                    {project.letter}
+                  </span>
+                )}
                 <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-card to-transparent" />
               </div>
               <div className="p-4">
