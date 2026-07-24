@@ -20,7 +20,7 @@ export default function BusinessUnits() {
             </h2>
           </div>
           <p className="text-warm-gray text-lg max-w-md">
-            Además del branding estratégico para Pymes, ofrezco dos unidades especializadas que complementan la transformación completa.
+            Además del branding estratégico para Pymes, ofrezco dos unidades especializadas que complementan la transformación integral.
           </p>
         </div>
 
