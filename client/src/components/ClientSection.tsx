@@ -61,7 +61,7 @@ export default function ClientSection() {
               key={client.title}
               className={`relative rounded-xl p-8 transition-all duration-300 group ${
                 i === 1
-                  ? "bg-orange/15 border border-orange/25 md:translate-y-4"
+                  ? "bg-orange/15 border border-orange/25"
                   : "bg-white/5 border border-white/10 hover:bg-white/8"
               }`}
             >
