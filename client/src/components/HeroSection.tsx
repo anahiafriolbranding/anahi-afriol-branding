@@ -115,7 +115,8 @@ export default function HeroSection() {
               {/* Badge servicios - h2 semántico */}
               <div className="absolute -top-4 -right-4 bg-orange text-white rounded-lg px-4 py-3 shadow-lg">
                 <p className="text-xs text-white/80 mb-0.5">Servicios</p>
-                <p className="font-bold text-sm font-[family-name:var(--font-display)]">Verbal · Visual · Espacial</p>
+                <p className="font-bold text-sm font-[family-name:var(--font-display)]">Branding</p>
+                <p className="text-xs text-white/70 mt-0.5">Verbal · Visual · Espacial</p>
               </div>
             </div>
           </div>
