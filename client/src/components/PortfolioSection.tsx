@@ -9,7 +9,7 @@ const projects = [
   {
     name: "SECUPRO",
     category: "Branding Verbal y Visual",
-    type: "Rebranding completo",
+    type: "Branding completo",
     color: "from-warm-gray-dark to-warm-gray",
     letter: "S",
   },
@@ -83,7 +83,7 @@ export default function PortfolioSection() {
             <div className="flex-shrink-0">
               <img
                 src="/manus-storage/secupro-logo_8fbdabe5.png"
-                alt="Logo SECUPRO Seguridad Tecnológica - Rebranding completo"
+                alt="Logo SECUPRO Seguridad Tecnológica - Branding completo"
                 className="w-28 h-28 object-contain bg-white rounded-xl p-2 shadow-md"
                 loading="lazy"
                 width="112"
@@ -92,15 +92,15 @@ export default function PortfolioSection() {
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
-                <span className="bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">REBRANDING</span>
+                <span className="bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">BRANDING</span>
                 <span className="text-white/50 text-sm">Verbal + Visual</span>
               </div>
               <h3 className="text-2xl font-bold text-white font-[family-name:var(--font-display)] mb-2">SECUPRO</h3>
               <p className="text-white/70 leading-relaxed max-w-lg">
-                Rebranding completo que redefinió la identidad corporativa, incluyendo naming, logotipo, paleta cromática y sistema de aplicación.
+                Branding completo que definió la identidad corporativa, incluyendo naming, logotipo, paleta cromática y sistema de aplicación.
               </p>
             </div>
-            <a href="https://www.behance.net/anahiafriol" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-orange transition-colors">
+            <a href="https://www.behance.net/gallery/242665185/SECUPRO-BRANDING-VERBAL-Y-VISUAL" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-orange transition-colors">
               <ExternalLink className="w-5 h-5 text-white" />
             </a>
           </div>
