@@ -55,6 +55,7 @@ const projects = [
     type: "Marca personal",
     color: "from-orange to-orange-dark",
     letter: "A",
+    logo: "/manus-storage/logo-andrea-sacchi_67bab2fa.jpg",
     link: "https://www.behance.net/gallery/181565837/ANDREA-SACCHI-LANGUAGE-SERVICES-Marca-Personal",
   },
 ];
