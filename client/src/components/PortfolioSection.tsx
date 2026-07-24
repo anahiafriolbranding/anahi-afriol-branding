@@ -15,10 +15,11 @@ const projects = [
   },
   {
     name: "Grupo CTS",
-    category: "Rebranding + Gráfica Vehicular",
+    category: "Rebranding, Arquitectura de Marca, Papelería, Gráfica Vehicular",
     type: "Identidad completa",
     color: "from-orange to-orange-dark",
     letter: "C",
+    link: "https://www.behance.net/gallery/185364447/GRUPO-CTS-Rebranding-papeleria-grafica-vehicular",
   },
   {
     name: "Easy House",
@@ -111,7 +112,7 @@ export default function PortfolioSection() {
           {projects.slice(1).map((project) => (
             <a
               key={project.name}
-              href="https://www.behance.net/anahiafriol"
+              href={project.link || "https://www.behance.net/anahiafriol"}
               target="_blank"
               rel="noopener noreferrer"
               className="group/card relative rounded-xl overflow-hidden border border-border bg-card hover:border-orange/30 transition-all duration-300 hover:shadow-md"
