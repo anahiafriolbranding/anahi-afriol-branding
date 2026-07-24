@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-warm-gray leading-relaxed mb-6 max-w-md">
-              Especialista en branding verbal, visual y espacial para Pymes, profesionales y emprendedores argentinos que necesitan una marca que comunique su verdadero valor.
+              Especialista en branding verbal, visual y espacial para Pymes, profesionales y emprendedores que necesitan una marca que comunique su verdadero valor.
             </p>
             <div className="space-y-3">
               <a href="https://wa.link/eesy3f" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-warm-gray-dark hover:text-orange transition-colors text-sm">
