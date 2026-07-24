@@ -52,7 +52,7 @@ export default function HeroSection() {
             {/* CTAs - NO MODIFICADOS */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
-                href="https://wa.link/eesy3f"
+                href="https://calendly.com/anahiafriolbrandingpymes/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-orange text-white px-8 py-4 rounded-lg font-bold text-base transition-all duration-200 hover:bg-orange-dark hover:scale-[1.02] active:scale-[0.97] shadow-lg shadow-orange/25"
