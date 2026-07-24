@@ -46,11 +46,12 @@ const projects = [
     link: "https://www.behance.net/gallery/181922751/COTEFLAN-Rebranding-Redes-Submarca",
   },
   {
-    name: "Los Atilios",
-    category: "Rebranding + Packaging",
-    type: "Marca completa",
+    name: "Andrea Sacchi | Language Services",
+    category: "Personal Branding + Redes Sociales",
+    type: "Marca personal",
     color: "from-orange to-orange-dark",
-    letter: "L",
+    letter: "A",
+    link: "https://www.behance.net/gallery/181565837/ANDREA-SACCHI-LANGUAGE-SERVICES-Marca-Personal",
   },
 ];
 
