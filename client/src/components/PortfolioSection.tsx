@@ -39,10 +39,11 @@ const projects = [
   },
   {
     name: "Coteflan",
-    category: "Rebranding + Submarca",
+    category: "Rebranding + Submarca + Sistema Gráfico + Redes Sociales",
     type: "Identidad + Redes",
     color: "from-warm-gray-dark to-warm-gray",
     letter: "C",
+    link: "https://www.behance.net/gallery/181922751/COTEFLAN-Rebranding-Redes-Submarca",
   },
   {
     name: "Los Atilios",
