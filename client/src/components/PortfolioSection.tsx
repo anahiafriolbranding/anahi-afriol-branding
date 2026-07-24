@@ -46,6 +46,7 @@ const projects = [
     type: "Identidad + Redes",
     color: "from-warm-gray-dark to-warm-gray",
     letter: "C",
+    logo: "/manus-storage/logo-coteflan_cfb0e5a1.jpg",
     link: "https://www.behance.net/gallery/181922751/COTEFLAN-Rebranding-Redes-Submarca",
   },
   {
