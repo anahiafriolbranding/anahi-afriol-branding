@@ -28,8 +28,8 @@ export default function BusinessUnits() {
         <div className="grid lg:grid-cols-12 gap-6">
           {/* Unit 1: Branding Principal */}
           <div className="lg:col-span-4 bg-card border border-border rounded-xl p-8 hover:border-orange/30 transition-all duration-300 hover:shadow-lg">
-            <div className="w-14 h-14 bg-orange rounded-lg flex items-center justify-center mb-6 overflow-hidden">
-              <img src="/manus-storage/logo-blanco_ca56deba.png" alt="Anahí Afriol Branding" className="w-10 h-10 object-contain" />
+            <div className="w-20 h-20 bg-orange rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+              <img src="/manus-storage/logo-blanco_ca56deba.png" alt="Anahí Afriol Branding" className="w-16 h-16 object-contain" />
             </div>
             <h3 className="font-[family-name:var(--font-display)] text-xl font-bold text-warm-gray-dark mb-3">
               Branding para Pymes
