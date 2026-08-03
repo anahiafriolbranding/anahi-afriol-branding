@@ -126,9 +126,9 @@ export default function PortfolioSection() {
               rel="noopener noreferrer"
               className="group/card relative rounded-xl overflow-hidden border border-border bg-card hover:border-orange/30 transition-all duration-300 hover:shadow-md"
             >
-              <div className={`h-24 ${project.logo ? 'bg-white' : `bg-gradient-to-br ${project.color}`} flex items-center justify-center relative`}>
+              <div className={`h-28 ${project.logo ? 'bg-white' : `bg-gradient-to-br ${project.color}`} flex items-center justify-center relative`}>
                 {project.logo ? (
-                  <img src={project.logo} alt={`Logo de ${project.name}`} className="h-16 w-auto object-contain" />
+                  <img src={project.logo} alt={`Logo de ${project.name}`} className="h-20 w-auto max-w-[80%] object-contain" />
                 ) : (
                   <span className="text-3xl font-bold text-white/90 font-[family-name:var(--font-display)] opacity-80 group-hover/card:opacity-100 transition-opacity">
                     {project.letter}
