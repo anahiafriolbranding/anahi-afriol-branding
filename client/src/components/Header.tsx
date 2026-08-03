@@ -39,9 +39,9 @@ export default function Header() {
           <img
             src="/manus-storage/logo-anahi-afriol_59af9d71.png"
             alt="Logo Anahí Afriol Branding y Comunicación para Pymes"
-            className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
-            width="120"
-            height="40"
+            className="h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+            width="168"
+            height="56"
           />
         </Link>
 
