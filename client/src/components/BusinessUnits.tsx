@@ -1,4 +1,4 @@
-import { ExternalLink, Paintbrush, Languages } from "lucide-react";
+import { ExternalLink, Languages } from "lucide-react";
 
 /*
  * Business Units Section - 3 unidades de negocio
@@ -28,8 +28,8 @@ export default function BusinessUnits() {
         <div className="grid lg:grid-cols-12 gap-6">
           {/* Unit 1: Branding Principal */}
           <div className="lg:col-span-4 bg-card border border-border rounded-xl p-8 hover:border-orange/30 transition-all duration-300 hover:shadow-lg">
-            <div className="w-14 h-14 bg-orange rounded-lg flex items-center justify-center mb-6">
-              <Paintbrush className="w-7 h-7 text-white" />
+            <div className="w-14 h-14 bg-orange rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+              <img src="/manus-storage/logo-finalanahiafriolbrandingycomunicacionpymes_b55f1122.png" alt="Anahí Afriol Branding" className="w-10 h-10 object-contain" />
             </div>
             <h3 className="font-[family-name:var(--font-display)] text-xl font-bold text-warm-gray-dark mb-3">
               Branding para Pymes
