@@ -126,7 +126,7 @@ export default function PortfolioSection() {
               rel="noopener noreferrer"
               className="group/card relative rounded-xl overflow-hidden border border-border bg-card hover:border-orange/30 transition-all duration-300 hover:shadow-md"
             >
-              <div className={`h-24 bg-gradient-to-br ${project.color} flex items-center justify-center relative`}>
+              <div className={`h-24 ${project.logo ? 'bg-white' : `bg-gradient-to-br ${project.color}`} flex items-center justify-center relative`}>
                 {project.logo ? (
                   <img src={project.logo} alt={`Logo de ${project.name}`} className="h-16 w-auto object-contain" />
                 ) : (
