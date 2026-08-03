@@ -1,4 +1,4 @@
-import { MessageSquare, Palette, Building2 } from "lucide-react";
+import { MessageSquare, Palette, Building2, Languages } from "lucide-react";
 
 /*
  * Services Section - Jerarquía semántica corregida
@@ -31,6 +31,14 @@ const services = [
     accent: "border-l-orange",
     tags: ["Arquigrafía", "Eventos", "Puestos de venta", "Oficinas"],
   },
+  {
+    icon: Languages,
+    title: "Branding Bilingüe",
+    description: "Identidad de marca bilingüe para profesionales y empresas que operan en español e inglés. Naming, messaging, identidad visual y comunicación coherente en ambos idiomas para mercados bilingües.",
+    color: "bg-warm-gray/10 text-warm-gray-dark",
+    accent: "border-l-warm-gray-dark",
+    tags: ["Bilingüe", "Naming internacional", "Messaging dual", "Mercados globales"],
+  },
 ];
 
 export default function ServicesSection() {
@@ -53,7 +61,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <article
               key={service.title}
