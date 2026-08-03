@@ -52,7 +52,7 @@ export default function ServicesSection() {
               Mis Servicios
             </span>
             <h2 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl font-bold text-warm-gray-dark leading-tight">
-              Branding 360°:<br />verbal, visual y espacial
+              Branding 360°:<br />verbal, visual, espacial y bilingüe
             </h2>
           </div>
           <p className="text-warm-gray text-lg leading-relaxed">
