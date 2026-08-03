@@ -15,12 +15,12 @@ export default function AboutSection() {
             <div className="relative">
               <div className="absolute -inset-4 bg-orange/5 rounded-2xl blur-xl" />
               <img
-                src="/manus-storage/anahi-retrato_20b7b201.jpg"
+                src="/manus-storage/foto-anahi-sobremi_9546166b.jpeg"
                 alt="Anahí Afriol, consultora de branding y comunicación para pymes"
                 className="relative rounded-2xl shadow-lg w-full object-cover"
                 loading="lazy"
-                width="701"
-                height="907"
+                width="756"
+                height="1344"
               />
               {/* Floating credential card */}
               <div className="absolute -bottom-6 -right-4 sm:right-4 bg-white rounded-xl shadow-lg p-4 border border-border">
