@@ -50,17 +50,14 @@ export default function BusinessUnits() {
 
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-14 h-14 bg-orange rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                    <polyline points="9,22 9,12 15,12 15,22" />
-                  </svg>
+                <div className="w-14 h-14 bg-orange rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  <img src="/manus-storage/logo-se-blanco_8d74d713.png" alt="SE+ Diseño de Espacios de Marca" className="w-12 h-12 object-contain" />
                 </div>
                 <div>
                   <h3 className="font-[family-name:var(--font-display)] text-xl font-bold">
                     SE+ Espacios de Marca
                   </h3>
-                  <p className="text-white/60 text-sm">Anahí Afriol + Yanina Afriol</p>
+                  <p className="text-white/60 text-sm">Diseño de Espacios de Marca</p>
                 </div>
               </div>
 
