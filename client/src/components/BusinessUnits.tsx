@@ -57,7 +57,7 @@ export default function BusinessUnits() {
                   <h3 className="font-[family-name:var(--font-display)] text-xl font-bold">
                     SE+ Espacios de Marca
                   </h3>
-                  <p className="text-white/60 text-sm">Diseño de Espacios de Marca</p>
+                  <p className="text-white/60 text-sm">Identidad + Arquitectura</p>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@ export default function BusinessUnits() {
           <div className="lg:col-span-3 bg-card border border-border rounded-xl p-8 hover:border-warm-gray-dark/25 transition-all duration-300 hover:shadow-lg relative overflow-hidden">
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-warm-gray-dark/3 rounded-full" />
             <div className="relative z-10">
-              <div className="w-14 h-14 bg-warm-gray-dark/8 rounded-lg flex items-center justify-center mb-6">
-                <Languages className="w-7 h-7 text-warm-gray-dark" />
+              <div className="w-20 h-14 flex items-center justify-center mb-6">
+                <img src="/manus-storage/logo-pampavox_c0e7419b.png" alt="PAMPA VOX - Your brand, fluently rebuilt for bilingual growth" className="h-full w-auto object-contain" />
               </div>
               <h3 className="font-[family-name:var(--font-display)] text-lg font-bold text-warm-gray-dark mb-2">
                 PAMPA VOX
