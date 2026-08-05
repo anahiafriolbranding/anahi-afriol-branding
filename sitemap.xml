@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Secciones principales del sitio (anclas) -->
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/#servicios</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/#cliente-ideal</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/#portfolio</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/#blog</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/#sobre-mi</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbranding.com.ar/#contacto</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog externo en WordPress -->
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/about/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2026/05/18/tu-empresa-muestra-afuera-lo-que-realmente-vale-por-dentro/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2026/05/05/ser-distinto-todavia-vale/</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2026/04/14/tener-linkedin-no-es-tener-una-marca-personal/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2026/03/31/podes-describir-en-una-frase-que-hace-diferente-a-tu-empresa/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2026/03/26/la-mitad-de-las-pymes-argentinas-cree-que-no-se-las-conoce-lo-suficiente/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2025/09/22/la-regla-del-triangulo-dorado/</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2025/09/17/caso-real-sigma-veterinaria-de-clinica-barrial-a-referente-zonal/</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2025/09/15/la-regla-de-los-3-segundos/</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2025/04/28/desarrollo-de-marca-la-clave-para-el-exito-de-tu-negocio/</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://anahiafriolbrandingpymes.wordpress.com/2025/03/21/logo/</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
