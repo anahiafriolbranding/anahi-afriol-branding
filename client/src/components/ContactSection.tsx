@@ -46,9 +46,7 @@ export default function ContactSection() {
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-5">
-            <a href="https://www.behance.net/anahiafriol" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-orange transition-colors" aria-label="Portfolio en Behance">
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 3.786h-3.411c-.259-.896-1.049-1.558-2.077-1.558-1.367 0-2.36.911-2.36 3.116 0 2.226 1.049 3.116 2.36 3.116 1.206 0 1.884-.716 2.137-1.865h3.175zm-13.328-4.5H5.8v1.6h4.598V12.5zm0-3.2H5.8v1.6h4.598V8.3zM2 4h8v1.2H2V4zm8 14.8c0 1.6-1.2 2.8-3.6 2.8H2V12h4.4c2.4 0 3.6 1.2 3.6 2.8V18.8zM3.2 16h3.2c.8 0 1.2-.4 1.2-.8 0-.4-.4-.8-1.2-.8H3.2v1.6zm0-4h3.2c.8 0 1.2-.4 1.2-.8 0-.4-.4-.8-1.2-.8H3.2v1.6z"/></svg>
-            </a>
+
             <a href="https://www.linkedin.com/in/anahi-afriol-branding-pymes" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-orange transition-colors" aria-label="LinkedIn de Anahí Afriol">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
