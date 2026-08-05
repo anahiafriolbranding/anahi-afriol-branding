@@ -37,7 +37,7 @@ export default function Header() {
         {/* Logo oficial */}
         <Link href="/" className="flex items-center gap-2 group">
           <img
-            src="/manus-storage/logo-anahi-final_7e402e43.png"
+            src="/manus-storage/logo-anahi-web_af1d5121.jpg"
             alt="Logo Anahí Afriol Branding y Comunicación para Pymes"
             className="h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             width="168"
