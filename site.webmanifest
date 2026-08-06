@@ -1,0 +1,22 @@
+{
+  "name": "Anah\u00ed Afriol - Branding y Comunicaci\u00f3n para Pymes",
+  "short_name": "Anah\u00ed Afriol",
+  "description": "Especialista en Branding y Comunicaci\u00f3n para Pymes. 20+ a\u00f1os transformando marcas.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
