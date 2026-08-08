@@ -30,9 +30,9 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-orange" />
                 WhatsApp: Consultá por tu proyecto
               </a>
-              <a href="mailto:anahiafriolbranding@pampavox.com" className="flex items-center gap-3 text-warm-gray-dark hover:text-orange transition-colors text-sm">
+              <a href="mailto:contacto@anahiafriolbranding.com.ar" className="flex items-center gap-3 text-warm-gray-dark hover:text-orange transition-colors text-sm">
                 <Mail className="w-4 h-4 text-orange" />
-                anahiafriolbranding@pampavox.com
+                contacto@anahiafriolbranding.com.ar
               </a>
               <div className="flex items-center gap-3 text-warm-gray text-sm">
                 <MapPin className="w-4 h-4 text-orange" />
