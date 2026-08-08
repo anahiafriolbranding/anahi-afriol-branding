@@ -1547,8 +1547,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .form-success.show { display: block; }
     .form-success svg { width: 2.5rem; height: 2.5rem; color: #22c55e; margin-bottom: 0.75rem; }
     .form-success p { font-size: 0.875rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; }
-    .form-success strong { color: var(--white); }
+        .form-success strong { color: var(--white); }
 
+    /* ===== FLOATING WHATSAPP BUTTON ===== */
+    .float-wa {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      background: #25d366;
+      color: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(37,211,102,0.4);
+      transition: all 0.25s cubic-bezier(0.23,1,0.32,1);
+      text-decoration: none;
+      animation: float-wa-in 0.4s cubic-bezier(0.23,1,0.32,1);
+    }
+    .float-wa:hover {
+      background: #20bd5a;
+      transform: scale(1.08);
+      box-shadow: 0 8px 22px rgba(37,211,102,0.5);
+    }
+    .float-wa:active { transform: scale(0.95); }
+    .float-wa svg { width: 1.9rem; height: 1.9rem; }
+    .float-wa-pulse {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid #25d366;
+      opacity: 0;
+      animation: float-wa-ring 2s ease-out infinite;
+    }
+    @keyframes float-wa-in { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+    @keyframes float-wa-ring {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      80% { transform: scale(1.35); opacity: 0; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .float-wa-pulse { animation: none; }
+    }
+
+    /* ===== BLOG LOADING ===== */
+    .blog-loading {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 4rem 1rem;
+      color: var(--warm-gray);
+    }
+    .blog-loading-spinner {
+      width: 2rem;
+      height: 2rem;
+      animation: blog-spin 1s linear infinite;
+    }
+    @keyframes blog-spin { to { transform: rotate(360deg); } }
+    .blog-loading p { font-size: 0.875rem; }
+    .blog-card a { display: inline-flex; }
   </style>
 </head>
 <body>
@@ -2089,38 +2152,13 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
             </a>
           </div>
         </div>
-        <div class="blog-grid">
-          <article class="blog-card">
-            <div class="blog-card-tag">Branding</div>
-            <div class="blog-card-date">18 de mayo de 2026</div>
-            <h3>¿Tu empresa muestra afuera lo que realmente vale por dentro?</h3>
-            <p>Desarrollo de branding verbal y visual para empresa de seguridad tecnológica. Cómo transformar la identidad de una marca en un motor de diferenciación.</p>
-            <a href="https://anahiafriolbrandingpymes.wordpress.com/2026/05/18/tu-empresa-muestra-afuera-lo-que-realmente-vale-por-dentro/" target="_blank" rel="noopener noreferrer" class="blog-card-link" data-track="blog_post_click" data-track-category="content" data-track-action="click" data-track-label="blog_post_secupro">
-              Leer más
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-          <article class="blog-card">
-            <div class="blog-card-tag">Branding</div>
-            <div class="blog-card-date">5 de mayo de 2026</div>
-            <h3>¿Ser distinto todavía vale?</h3>
-            <p>Los mismos colores. Los mismos mensajes. Las mismas marcas que gritan lo mismo con distintas palabras. Y en el medio de todo ese ruido… ¿dónde estás vos?</p>
-            <a href="https://anahiafriolbrandingpymes.wordpress.com/2026/05/05/ser-distinto-todavia-vale/" target="_blank" rel="noopener noreferrer" class="blog-card-link" data-track="blog_post_click" data-track-category="content" data-track-action="click" data-track-label="blog_post_distinto">
-              Leer más
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-          <article class="blog-card">
-            <div class="blog-card-tag">Marca Personal</div>
-            <div class="blog-card-date">14 de abril de 2026</div>
-            <h3>Tener LinkedIn no es tener una marca personal</h3>
-            <p>Confundir ambas cosas es uno de los errores más caros que puede cometer un profesional hoy. Profesionales con años de trayectoria que publican sin estrategia.</p>
-            <a href="https://anahiafriolbrandingpymes.wordpress.com/2026/04/14/tener-linkedin-no-es-tener-una-marca-personal/" target="_blank" rel="noopener noreferrer" class="blog-card-link" data-track="blog_post_click" data-track-category="content" data-track-action="click" data-track-label="blog_post_linkedin">
-              Leer más
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </article>
-
+        <div class="blog-grid" id="blogGrid" aria-live="polite">
+          <!-- Loading state -->
+          <div class="blog-loading" id="blogLoading">
+            <svg class="blog-loading-spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M22 12a10 10 0 01-10 10"/></svg>
+            <p>Cargando artículos del blog…</p>
+          </div>
+          <!-- Fallback: latest 3 posts rendered on each visit -->
         </div>
         <div class="blog-cta">
           <a href="https://anahiafriolbrandingpymes.wordpress.com/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
@@ -2476,9 +2514,102 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
             submitBtn.style.opacity = '1';
           }
         });
-      });
+            });
     }
   })();
   </script>
+
+  <!-- ===== DYNAMIC BLOG LOADER (RSS from WordPress) ===== -->
+  <script>
+  (function() {
+    var RSS_URL = 'https://anahiafriolbrandingpymes.wordpress.com/feed/';
+    var PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(RSS_URL);
+    var CACHE_KEY = 'aa_blog_posts_v1';
+    var CACHE_TTL = 30 * 60 * 1000; // 30 minutes
+    var MAX_POSTS = 3;
+    var MONTHS = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+
+    function stripHtml(html) {
+      var tmp = document.createElement('div');
+      tmp.innerHTML = html || '';
+      return (tmp.textContent || '').trim();
+    }
+
+    function formatDate(iso) {
+      var d = new Date(iso);
+      return d.getDate() + ' de ' + MONTHS[d.getMonth()] + ' de ' + d.getFullYear();
+    }
+
+    function renderPosts(posts) {
+      var grid = document.getElementById('blogGrid');
+      var loading = document.getElementById('blogLoading');
+      if (!grid) return;
+      // Remove loading indicator
+      if (loading) loading.remove();
+      // Remove any previously rendered cards
+      grid.querySelectorAll('.blog-card').forEach(function(el) { el.remove(); });
+      posts.forEach(function(post) {
+        var desc = stripHtml(post.description);
+        if (desc.length > 140) desc = desc.substring(0, 137) + '…';
+        var tag = post.categories && post.categories.length ? post.categories[0] : 'Branding';
+        var article = document.createElement('article');
+        article.className = 'blog-card';
+        article.innerHTML =
+          '<div class="blog-card-tag">' + tag + '</div>' +
+          '<div class="blog-card-date">' + formatDate(post.pubDate) + '</div>' +
+          '<h3>' + post.title + '</h3>' +
+          '<p>' + desc + '</p>' +
+          '<a href="' + post.link + '" target="_blank" rel="noopener noreferrer" class="blog-card-link" ' +
+          'data-track="blog_post_click" data-track-category="content" data-track-action="click" data-track-label="blog_post_dynamic">' +
+          'Leer más' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>' +
+          '</a>';
+        grid.appendChild(article);
+      });
+    }
+
+    function loadFromCache() {
+      try {
+        var raw = localStorage.getItem(CACHE_KEY);
+        if (!raw) return null;
+        var cached = JSON.parse(raw);
+        if (Date.now() - cached.ts > CACHE_TTL) return null;
+        return cached.posts;
+      } catch (e) { return null; }
+    }
+
+    function saveCache(posts) {
+      try {
+        localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), posts: posts }));
+      } catch (e) { /* ignore */ }
+    }
+
+    // Show cached posts immediately while refreshing in background
+    var cached = loadFromCache();
+    if (cached && cached.length) renderPosts(cached);
+
+    // Always fetch latest posts from WordPress RSS
+    fetch(PROXY)
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        if (data.status === 'ok' && data.items && data.items.length) {
+          var latest = data.items.slice(0, MAX_POSTS);
+          saveCache(latest);
+          renderPosts(latest);
+          // Push event to dataLayer for analytics
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'blog_posts_loaded', blogPosts: latest.map(function(p) { return p.title; }) });
+        }
+      })
+      .catch(function() {
+        // If network fails and no cache, keep loading message; existing rendered content stays
+      });
+  })();
+  </script>
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.link/eesy3f" target="_blank" rel="noopener noreferrer" class="float-wa" aria-label="Escribime por WhatsApp" data-track="float_whatsapp_click" data-track-category="contact" data-track-action="click" data-track-label="float_whatsapp" data-track-value="1">
+    <span class="float-wa-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 </body>
 </html>
