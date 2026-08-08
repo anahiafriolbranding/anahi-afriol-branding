@@ -9,6 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LeadMagnetSection from "@/components/LeadMagnetSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 /**
  * Home Page - Anahí Afriol Branding y Comunicación para Pymes
@@ -43,6 +44,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
