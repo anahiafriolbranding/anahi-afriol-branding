@@ -1432,7 +1432,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .contact-form {
       display: flex;
       flex-direction: column;
+      gap: 1.25rem;
+    }
+    .contact-form-grid {
+      display: flex;
       gap: 1rem;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      background: rgba(255,255,255,0.04);
+    }
+    .contact-form-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 0;
+    }
+    @media (max-width: 768px) {
+      .contact-form-grid { flex-direction: column; }
     }
     .contact-form-group {
       display: flex;
@@ -1470,8 +1488,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .contact-form textarea {
       min-height: 7rem;
       resize: vertical;
+      flex: 1;
     }
+    .contact-form-col:last-child .contact-form-group:last-child { flex: 1; }
     .contact-form .btn-submit {
+      align-self: center;
+      min-width: 220px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -2226,21 +2248,27 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
           <div class="form-or">o completá el formulario</div>
           <div class="contact-form-wrapper">
             <form class="contact-form" id="contactForm">
-              <div class="contact-form-group">
-                <label for="name">Nombre *</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-              </div>
-              <div class="contact-form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-              </div>
-              <div class="contact-form-group">
-                <label for="phone">Teléfono (opcional)</label>
-                <input type="tel" id="phone" name="phone" placeholder="+54 11 1234-5678">
-              </div>
-              <div class="contact-form-group">
-                <label for="message">Contame sobre tu proyecto *</label>
-                <textarea id="message" name="message" placeholder="Contame brevemente qué necesitás para tu marca..." required></textarea>
+              <div class="contact-form-grid">
+                <div class="contact-form-col">
+                  <div class="contact-form-group">
+                    <label for="name">Nombre *</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                  </div>
+                  <div class="contact-form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                  </div>
+                </div>
+                <div class="contact-form-col">
+                  <div class="contact-form-group">
+                    <label for="phone">Teléfono (opcional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+54 11 1234-5678">
+                  </div>
+                  <div class="contact-form-group">
+                    <label for="message">Contame sobre tu proyecto *</label>
+                    <textarea id="message" name="message" placeholder="Contame brevemente qué necesitás para tu marca..." required></textarea>
+                  </div>
+                </div>
               </div>
               <button type="submit" class="btn-submit" data-track="form_submit_click" data-track-category="contact" data-track-action="submit" data-track-label="contact_form">
                 Enviar mensaje
