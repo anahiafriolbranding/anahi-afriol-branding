@@ -2392,15 +2392,15 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
   </script>
   <!-- End Google Tag Manager Event Tracking -->
 
-  <!-- Contact Form Handler -->
+    <!-- Contact Form Handler - Formspree -->
   <script>
   (function() {
     var form = document.getElementById('contactForm');
     var success = document.getElementById('formSuccess');
+    var submitBtn = form ? form.querySelector('.btn-submit') : null;
     if (form && success) {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
-        
         // Push form event to dataLayer
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
@@ -2416,33 +2416,48 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
             message: document.getElementById('message').value
           }
         });
-        
-        // Collect form data
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var phone = document.getElementById('phone').value;
-        var message = document.getElementById('message').value;
-        
-        // Show success message
-        form.style.display = 'none';
-        success.classList.add('show');
-        
-        // Build mailto link
-        var mailSubject = encodeURIComponent('Nuevo contacto desde la web: ' + name);
-        var mailBody = encodeURIComponent(
-          'Nombre: ' + name + '\n' +
-          'Email: ' + email + '\n' +
-          (phone ? 'Teléfono: ' + phone + '\n' : '') +
-          '\nMensaje:\n' + message
-        );
-        window.location.href = 'mailto:contacto@anahiafriolbranding.com.ar?subject=' + mailSubject + '&body=' + mailBody;
-        
-        // Push successful conversion
-        window.dataLayer.push({
-          event: 'form_conversion',
-          eventCategory: 'contact',
-          eventAction: 'form_conversion',
-          eventLabel: 'contact_form_email_redirect'
+        // Disable button during submission
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.style.opacity = '0.6';
+        }
+        // Send via Formspree
+        var formData = new FormData(form);
+        fetch('https://formspree.io/f/xljrgjgg', {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            // Show success message
+            form.style.display = 'none';
+            success.classList.add('show');
+            // Push successful conversion
+            window.dataLayer.push({
+              event: 'form_conversion',
+              eventCategory: 'contact',
+              eventAction: 'form_conversion',
+              eventLabel: 'contact_form_formspree_success'
+            });
+          } else {
+            // Error - show error message
+            var errorEl = document.createElement('p');
+            errorEl.textContent = 'Hubo un error al enviar. Por favor escribime por WhatsApp o probá de nuevo.';
+            errorEl.style.color = '#ef4444';
+            errorEl.style.marginTop = '0.5rem';
+            form.appendChild(errorEl);
+          }
+        }).catch(function(error) {
+          var errorEl = document.createElement('p');
+          errorEl.textContent = 'Error de conexión. Escribime por WhatsApp o probá de nuevo.';
+          errorEl.style.color = '#ef4444';
+          errorEl.style.marginTop = '0.5rem';
+          form.appendChild(errorEl);
+        }).finally(function() {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+          }
         });
       });
     }
