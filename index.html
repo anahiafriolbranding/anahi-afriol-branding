@@ -2522,8 +2522,7 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
   <!-- ===== DYNAMIC BLOG LOADER (RSS from WordPress) ===== -->
   <script>
   (function() {
-    var RSS_URL = 'https://anahiafriolbrandingpymes.wordpress.com/feed/';
-    var PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(RSS_URL);
+    var WORDPRESS_API = 'https://public-api.wordpress.com/rest/v1.1/sites/anahiafriolbrandingpymes.wordpress.com/posts/?number=3';
     var CACHE_KEY = 'aa_blog_posts_v1';
     var CACHE_TTL = 30 * 60 * 1000; // 30 minutes
     var MAX_POSTS = 3;
@@ -2588,12 +2587,21 @@ Si estás pensando en invertir en tu marca, hacelo con alguien que te escuche de
     var cached = loadFromCache();
     if (cached && cached.length) renderPosts(cached);
 
-    // Always fetch latest posts from WordPress RSS
-    fetch(PROXY)
+    // Always fetch latest posts from the public WordPress API.
+    // The former rss2json proxy now returns 403, so it left the loader stuck forever.
+    fetch(WORDPRESS_API, { headers: { 'Accept': 'application/json' } })
       .then(function(res) { return res.json(); })
       .then(function(data) {
-        if (data.status === 'ok' && data.items && data.items.length) {
-          var latest = data.items.slice(0, MAX_POSTS);
+        if (data.posts && data.posts.length) {
+          var latest = data.posts.slice(0, MAX_POSTS).map(function(post) {
+            return {
+              title: stripHtml(post.title),
+              description: stripHtml(post.excerpt),
+              pubDate: post.date,
+              link: post.URL,
+              categories: post.categories ? Object.keys(post.categories).map(function(category) { return post.categories[category].name || category; }) : []
+            };
+          });
           saveCache(latest);
           renderPosts(latest);
           // Push event to dataLayer for analytics

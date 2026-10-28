@@ -7,6 +7,7 @@ import BusinessUnits from "@/components/BusinessUnits";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import LeadMagnetSection from "@/components/LeadMagnetSection";
+import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
@@ -40,6 +41,7 @@ export default function Home() {
         <BusinessUnits />
         <AboutSection />
         <TestimonialsSection />
+        <BlogSection />
         <LeadMagnetSection />
         <ContactSection />
       </main>

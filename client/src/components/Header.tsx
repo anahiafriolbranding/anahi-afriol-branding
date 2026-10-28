@@ -22,6 +22,7 @@ export default function Header() {
     { href: "#cliente-ideal", label: "Para quién" },
     { href: "#unidades", label: "Unidades de Negocio" },
     { href: "#sobre-mi", label: "Sobre mí" },
+    { href: "#blog", label: "Blog" },
   ];
 
   return (
